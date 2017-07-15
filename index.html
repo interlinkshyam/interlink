@@ -553,7 +553,16 @@ $.ajax({
           data: $('#form1').serialize(),
           datatype: 'json',
           success:function(){
-            console.log("working");
+            // console.log("working");
+            sendbutton1=document.getElementById('sendQ1');
+            sendbutton2=document.getElementById('sendQ2');
+            bg=document.getElementById('bgcolor');
+            bg.className=bg.className+" suc-color"
+            bg2=document.getElementById('bgcolor2');
+            bg2.className=bg2.className+" suc-color"
+
+            sendbutton1.text="Sent Succesfully!";
+            sendbutton2.text="Sent Succesfully!";
           }
         });
 
