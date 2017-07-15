@@ -551,7 +551,10 @@ $.ajax({
           method: 'POST',
           url: 'https://formspree.io/bharathkrishnakb@gmail.com',
           data: $('#form1').serialize(),
-          datatype: 'json'
+          datatype: 'json',
+          success:function(){
+            console.log("working");
+          }
         });
 
 // $.post('//formspree.io/bharathkrishnakb@gmail.com', $('#form1').serialize(),  function(response) {
